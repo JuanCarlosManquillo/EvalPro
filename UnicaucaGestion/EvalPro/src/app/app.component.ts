@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 @Component({
   selector: 'app-root',
   standalone: true,   // no se debe registrar en archvos auxiliares
-  imports: [HeaderComponent, FooterComponent,RouterOutlet], //routeroutlet -> enrutamiento entre componentes
+  imports: [FooterComponent,RouterOutlet], //routeroutlet -> enrutamiento entre componentes
   templateUrl: './app.component.html', //ruta a plantilla html que contiene la vista
   styleUrls: ['./app.component.css'] //lo mismo pero con css
 })

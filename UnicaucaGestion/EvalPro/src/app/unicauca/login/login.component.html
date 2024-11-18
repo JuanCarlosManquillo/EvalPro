@@ -1,12 +1,12 @@
-<form class="login-form">
+<form class="login-form" (ngSubmit)="onLogin()">
   <p class="login-text">
     <span class="fa-stack fa-lg">
       <i class="fa fa-circle fa-stack-2x"></i>
       <i class="fa fa-lock fa-stack-1x"></i>
     </span>
   </p>
-  <input type="email" class="login-username" autofocus="true" required="true" placeholder="Email" />
-  <input type="password" class="login-password" required="true" placeholder="Password" />
+  <input type="email" class="login-username" [(ngModel)]="email" name="email" autofocus="true" required="true" placeholder="Email" />
+  <input type="password" class="login-password" [(ngModel)]="password" name="password" required="true" placeholder="Password" />
   <button type="submit" class="login-submit">Login</button>
 </form>
 

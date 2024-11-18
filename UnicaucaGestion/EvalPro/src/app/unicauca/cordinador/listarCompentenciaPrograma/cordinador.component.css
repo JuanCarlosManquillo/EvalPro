@@ -1,0 +1,70 @@
+.header {
+    background-color: #800000;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-bar {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-bar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-bar a:hover {
+    text-decoration: underline;
+  }
+  
+  .competencias {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  thead {
+    background-color: #ddd;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-detalles {
+    background-color: #d9534f;
+    color: white;
+  }
+  
+  .btn-editar {
+    background-color: #5cb85c;
+    color: white;
+  }
+  
+  .btn-eliminar {
+    background-color: #0275d8;
+    color: white;
+  }
+  
+  .btn-agregar {
+    background-color: #f0ad4e;
+    color: white;
+    margin-top: 10px;
+  }

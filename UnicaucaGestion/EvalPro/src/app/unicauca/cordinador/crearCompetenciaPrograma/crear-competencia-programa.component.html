@@ -1,0 +1,25 @@
+<div class="crear-competencia">
+    <button class="btn-back" routerLink="/cordinador">←</button>
+    <h2>Creación de Competencias de Programa</h2>
+    
+    <form>
+      <div class="form-group">
+        <label for="nombre">Ingrese Nombre</label>
+        <input type="text" id="nombre" placeholder="Competencia 1" />
+      </div>
+      <div class="form-group">
+        <label for="descripcion">Descripción</label>
+        <textarea id="descripcion" placeholder="Esta competencia permite que..."></textarea>
+      </div>
+      <div class="form-group">
+        <label for="nivel">Nivel</label>
+        <select id="nivel">
+          <option value="" disabled selected>Seleccione un nivel</option>
+          <option value="Bajo">Bajo</option>
+          <option value="Medio">Medio</option>
+          <option value="Alto">Alto</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Siguiente</button>
+    </form>
+  </div>
