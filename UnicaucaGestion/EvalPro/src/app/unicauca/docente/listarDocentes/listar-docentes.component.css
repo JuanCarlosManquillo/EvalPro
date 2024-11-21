@@ -1,0 +1,56 @@
+
+  
+/* Header styling */
+.header {
+    background-color: #800000;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.nav-bar {
+    display: flex;
+    gap: 15px;
+}
+  
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+}
+  
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+  
+/* Table styling */
+.docentes {
+    margin-top: 20px;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #ddd;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.alert {
+    margin-top: 10px;
+}

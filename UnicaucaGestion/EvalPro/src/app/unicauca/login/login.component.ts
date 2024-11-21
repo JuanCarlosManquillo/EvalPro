@@ -21,7 +21,7 @@ export class LoginComponent {
   constructor(private router: Router) {}
 
   onLogin() {
-    if (this.email === 'admin@example.com' && this.password === 'password') {
+    if (this.email === 'admin' && this.password === '123') {
       this.router.navigate(['/cordinador']);
     } else {
       alert('Credenciales incorrectas');

@@ -1,0 +1,40 @@
+<div >
+    <header class="header">
+        <h1>Bienvenido UserCoordinador</h1>
+        <nav class="nav-bar">
+          <a routerLink="/asignaturas">Asignaturas</a>
+          <a routerLink="/docente">Docentes</a>
+          <a routerLink="/cordinador" >Gestión de Competencias</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="docentes">
+            <h2>Listado de Docentes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Identificación</th>
+          <th>Nombre Completo</th>
+          <th>Tipo</th>
+          <th>Estado</th>
+          <th>Correo</th>
+          <th>Asignatura</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let docente of docentes">
+          <td>{{ docente.id }}</td>
+          <td>{{ docente.nombre }}</td>
+          <td>{{ docente.tipo }}</td>
+          <td>{{ docente.estado }}</td>
+          <td>{{ docente.correo }}</td>
+          <td>{{ docente.asignatura }}</td>
+        </tr>
+      </tbody>
+    </table>
+        </section>
+    </main>
+    
+  </div>
+  

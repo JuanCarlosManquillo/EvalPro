@@ -1,0 +1,39 @@
+<div>
+    
+
+    <header class="header">
+        <h1>Bienvenido UserCoordinador</h1>
+        <nav class="nav-bar">
+          <a routerLink="/asignaturas">Asignaturas</a>
+          <a routerLink="/docente">Docentes</a>
+          <a routerLink="/cordinador">Gestión de Competencias</a>
+        </nav>
+           
+    </header>
+    <main>
+        <h2>Listado de resultados de aprendizaje de la competencia</h2>   
+      <table>
+        
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Descripción</th>
+            <th>Opciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let resultado of resultados">
+            <td>{{ resultado.id }}</td>
+            <td>{{ resultado.descripcion }}</td>
+            <td>
+              <button class="btn btn-editar">Editar</button>
+              <button class="btn btn-eliminar">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn btn-agregar" routerLink="/crear-RAP">Agregar</button>
+      <button class="btn btn-back" routerLink="/cordinador">Volver</button>
+    </main>
+  </div>
+  

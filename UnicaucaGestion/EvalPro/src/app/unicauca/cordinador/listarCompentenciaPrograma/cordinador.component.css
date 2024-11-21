@@ -49,22 +49,22 @@
   }
   
   .btn-detalles {
-    background-color: #d9534f;
+    background-color: #17a317;
     color: white;
   }
   
   .btn-editar {
-    background-color: #5cb85c;
+    background-color: #e6d00b;
     color: white;
   }
   
   .btn-eliminar {
-    background-color: #0275d8;
+    background-color: #cf0700;
     color: white;
   }
   
   .btn-agregar {
-    background-color: #f0ad4e;
+    background-color: #0275d8;
     color: white;
     margin-top: 10px;
   }

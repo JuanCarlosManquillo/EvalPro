@@ -1,10 +1,10 @@
-<div class="container-fluid">
+<div >
   <header class="header">
     <h1>Bienvenido UserCoordinador</h1>
     <nav class="nav-bar">
       <a routerLink="/asignaturas">Asignaturas</a>
-      <a routerLink="/docentes">Docentes</a>
-      <a routerLink="/gestion-competencias">Gestión de Competencias</a>
+      <a routerLink="/docente">Docentes</a>
+      <a routerLink="/cordinador">Gestión de Competencias</a>
     </nav>
   </header>
   
@@ -27,7 +27,7 @@
             <td>{{ competencia.nombre }}</td>
             <td>{{ competencia.nivel }}</td>
             <td>
-              <button class="btn btn-detalles">Detalles</button>
+              <button class="btn btn-detalles" routerLink="/listar-RAC">Detalles</button>
             </td>
             <td>
               <button class="btn btn-editar">Editar</button>

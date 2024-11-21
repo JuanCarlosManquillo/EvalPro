@@ -9,5 +9,5 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   titulo: string = 'EvalPro';
-  subtitulo: string = 'Sistema de Evaluación de Competencias y Resultados de Aprendizaje';
+ 
 }
