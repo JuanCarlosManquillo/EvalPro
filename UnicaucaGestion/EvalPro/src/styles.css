@@ -1,1 +1,112 @@
-/* You can add global styles to this file, and also import other style files */
+.header {
+    background-color: #800000;
+    color: #FDF0D5;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-bar a {
+    color: #FDF0D5;
+    text-decoration: none;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+    color: #52FFA5;
+    
+}
+
+.competencias {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #ddd;
+}
+
+tbody
+{
+    background-color: white;
+}
+
+.container_buttom
+{
+    display: flex;
+    gap: 5px;
+    
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-detalles {
+    background-color: #17a317;
+    color: white;
+    &:hover, &:focus {
+        background: white;
+        color: #17a317;
+        transition: 250ms background ease-in;
+        }
+}
+
+.btn-editar {
+    background-color: #e6d00b;
+    color: white;
+    &:hover, &:focus {
+        color: #e6d00b;
+        transition: 250ms background ease-in;
+        }
+}
+
+.btn-eliminar {
+    background-color: #cf0700;
+    color: white;
+    &:hover, &:focus {
+        background: white;
+        color: #cf0700;
+        transition: 250ms background ease-in;
+        }
+}
+
+.btn-agregar {
+    background-color: #0275d8;
+    color: white;
+    margin-top: 10px;
+    &:hover, &:focus {
+        background: white;
+        color: #0275d8;
+        transition: 250ms background ease-in;
+        }
+}
+
+.btn-back{
+    background-color: rgb(212, 169, 112);
+    margin-top: 10px;
+    &:hover, &:focus {
+        color: rgb(212, 169, 112);
+        transition: 250ms background ease-in;
+        }
+}

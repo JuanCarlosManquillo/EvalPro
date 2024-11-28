@@ -8,10 +8,9 @@
           <a routerLink="/docente">Docentes</a>
           <a routerLink="/cordinador">Gestión de Competencias</a>
         </nav>
-           
     </header>
     <main>
-        <h2>Listado de resultados de aprendizaje de la competencia</h2>   
+        <h2>Listado de resultados de aprendizaje de la competencia del programa: Ingeniería de Sistemas</h2>   
       <table>
         
         <thead>
@@ -27,13 +26,15 @@
             <td>{{ resultado.descripcion }}</td>
             <td>
               <button class="btn btn-editar" routerLink="/actualizar-RAP">Editar</button>
-              <button class="btn btn-eliminar">Eliminar</button>
+              <button class="btn btn-eliminar" style="margin-left: 5px">Eliminar</button>
             </td>
           </tr>
         </tbody>
       </table>
-      <button class="btn btn-agregar" routerLink="/crear-RAP">Agregar</button>
-      <button class="btn btn-back" routerLink="/cordinador">Volver</button>
+      <div class="container_buttom">
+        <button class="btn btn-agregar" routerLink="/crear-RAP">Agregar</button>
+        <button class="btn btn-back" routerLink="/cordinador">Volver</button>
+      </div>
     </main>
   </div>
   
