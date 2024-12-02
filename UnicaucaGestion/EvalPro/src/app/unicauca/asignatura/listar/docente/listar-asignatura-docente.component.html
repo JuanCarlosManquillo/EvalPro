@@ -1,1 +1,42 @@
-<p>listar-asignatura-docente works!</p>
+<div >
+    <header class="header">
+        <h1>Bienvenido UserDocente</h1>
+        <nav class="nav-bar">
+            <a routerLink="/docente/asignaturas">Asignaturas</a>
+            <a routerLink="/docente/competencia-asignatura">Gestión de Competencias</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="competencias">
+            <h2>Lista de Asignaturas</h2>
+        <table>
+            <thead>
+                <tr>
+                <th>Id</th>
+                <th>Asignatura</th>
+                <th>Descripcion</th>
+                <th>Creditos</th>
+                <th>Semestre</th>
+                <th>Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let asignatura of asignaturas">
+                <td>{{ asignatura.id }}</td>
+                <td>
+                    {{ asignatura.nombre }}
+                </td>
+                <td>{{ asignatura.descripcion }}</td>
+                <td>{{ asignatura.creditos }}</td>
+                <td>{{ asignatura.semestre }}</td>
+                <td>
+                    <button class="btn btn-detalles" routerLink="/docente/competencia-asignatura">Detalles</button>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+            
+        </section>
+    </main>
+</div>

@@ -1,0 +1,77 @@
+.crear-competencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000000;
+    color: #f5deb3;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    width: 150px;
+    margin-right: 10px;
+    color: #f5deb3;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.btn {
+    background-color: #f5deb3;
+    color: #332d2d;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #e0c38b;
+}
+
+.btn-back {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    color: #f5deb3;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    text-decoration: underline;
+}

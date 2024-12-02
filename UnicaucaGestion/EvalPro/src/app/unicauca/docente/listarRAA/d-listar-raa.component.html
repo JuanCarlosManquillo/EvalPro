@@ -1,0 +1,42 @@
+<div>
+    
+
+    <header class="header">
+        <h1>Bienvenido UserDocente</h1>
+        <nav class="nav-bar">
+            <a routerLink="/docente/asignaturas">Asignaturas</a>
+            <a routerLink="/docente/competencia-asignatura">Gestión de Competencias</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Listado de resultados de aprendizaje de la competencia de la asignatura</h2>   
+        <table>
+        
+        <thead>
+            <tr>
+            <th>Id</th>
+            <th>Descripción</th>
+            <th>Rúbricas</th>
+            <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let resultado of resultados">
+            <td>{{ resultado.id }}</td>
+            <td>{{ resultado.descripcion }}</td>
+            <td>
+                <button class="btn btn-detalles" routerLink="/docente/rubricas">Detalles</button>
+            </td>
+            <td>
+                <button class="btn btn-editar" routerLink="/docente/RAA/modify">Editar</button>
+                <button class="btn btn-eliminar" style="margin-left: 5px">Eliminar</button>
+            </td>
+            </tr>
+        </tbody>
+        </table>
+        <div class="container_buttom">
+        <button class="btn btn-agregar" routerLink="/docente/RAA/new">Agregar</button>
+        <button class="btn btn-back" routerLink="/docente/competencia-asignatura">Volver</button>
+        </div>
+    </main>
+</div>

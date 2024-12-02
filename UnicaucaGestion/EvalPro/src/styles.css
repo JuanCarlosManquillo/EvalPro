@@ -110,3 +110,14 @@ th, td {
         transition: 250ms background ease-in;
         }
 }
+
+
+.btn-vincular{
+    background-color: #790f84;
+    color: white;
+    &:hover, &:focus {
+        background: white;
+        color: #790f84;
+        transition: 250ms background ease-in;
+        }
+}

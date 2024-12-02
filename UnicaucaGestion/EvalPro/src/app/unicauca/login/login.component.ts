@@ -27,7 +27,7 @@ export class LoginComponent {
       this.router.navigate(['/cordinador']);
     } else if(this.email === 'docente' && this.password === '123')
       {
-        this.router.navigate(['/asignaturas']);
+        this.router.navigate(['/docente/asignaturas']);
       }else{
       alert('Credenciales incorrectas');
     }
