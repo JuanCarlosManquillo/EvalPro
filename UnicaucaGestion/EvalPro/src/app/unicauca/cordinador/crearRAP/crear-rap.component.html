@@ -2,13 +2,13 @@
     <button class="btn-back" routerLink="/crear-competencia-programa" role="button">←</button>
     <h2>Creación de Resultados de Aprendizaje por Programa</h2>
     <div class="card-body">
-        <form>
+        <form (ngSubmit)="guardar()">
             <div class="form-group row">
-                <label for="nombre">Ingrese Nombre:</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Resultado Aprendizaje 1" />
+                <label for="nombre">Ingrese Descripción:</label>
+                <input type="text" class="form-control" [(ngModel)]="RA.descripcion" name="descripcion" id="nombre" placeholder="Resultado Aprendizaje 1" required />
             </div>
             
-            <button class="btn" role="button" routerLink="/listar-RAC">Registrar</button>
+            <button type="submit" class="btn btn-agregar">Agregar</button>
         </form>
     </div>
 </div>

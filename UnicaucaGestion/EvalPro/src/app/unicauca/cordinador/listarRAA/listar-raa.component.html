@@ -26,7 +26,7 @@
             <td>{{ resultado.descripcion }}</td>
             <td>
                 <button class="btn btn-editar" routerLink="/actualizar-RAA">Editar</button>
-                <button class="btn btn-eliminar" style="margin-left: 5px">Eliminar</button>
+                <button class="btn btn-eliminar" (click)="eliminarRAA(resultado.id)" style="margin-left: 5px">Eliminar</button>
             </td>
             </tr>
         </tbody>

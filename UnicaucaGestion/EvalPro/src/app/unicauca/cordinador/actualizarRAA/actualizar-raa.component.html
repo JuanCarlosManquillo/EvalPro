@@ -2,13 +2,12 @@
     <button class="btn-back" routerLink="/listar-RAA" role="button">←</button>
     <h2>Editar  Resultados de Aprendizaje por Asignatura</h2>
     <div class="card-body">
-        <form>
+        <form (ngSubmit)="updateRAA()">
             <div class="form-group row">
-                <label for="nombre">Ingrese Nombre:</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Resultado Aprendizaje 1" />
+                <label for="descripcion">Ingrese Descripción:</label>
+                <input type="text" class="form-control" id="descripcion" [(ngModel)]="ra.descripcion" name="descripcion" placeholder="Resultado Aprendizaje 1" required />
             </div>
-            
-            <button class="btn" role="button" routerLink="/listar-RAA">Actualizar</button>
+            <button class="btn" type="submit">Actualizar</button>
         </form>
     </div>
 </div>

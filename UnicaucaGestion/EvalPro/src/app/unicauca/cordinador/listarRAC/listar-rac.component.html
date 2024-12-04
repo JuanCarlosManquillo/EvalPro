@@ -25,15 +25,15 @@
             <td>{{ resultado.id }}</td>
             <td>{{ resultado.descripcion }}</td>
             <td>
-              <button class="btn btn-editar" routerLink="/actualizar-RAP">Editar</button>
-              <button class="btn btn-eliminar" style="margin-left: 5px">Eliminar</button>
+              <button class="btn btn-editar" [routerLink]="['/actualizar-RAP', resultado.id]">Editar</button>
+              <button class="btn btn-eliminar" (click)="eliminar(resultado.id)" style="margin-left: 5px">Eliminar</button>
             </td>
           </tr>
         </tbody>
       </table>
       <div class="container_buttom">
-        <button class="btn btn-agregar" routerLink="/crear-RAP">Agregar</button>
-        <button class="btn btn-back" routerLink="/cordinador">Volver</button>
+        <button class="btn btn-agregar" (click)="agregar()">Agregar</button>
+        <button class="btn btn-back" (click)="back()">Volver</button>
       </div>
     </main>
   </div>

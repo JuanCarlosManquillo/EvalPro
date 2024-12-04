@@ -22,12 +22,12 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let competencia of competencias">
+          <tr *ngFor="let competencia of competencia">
             <td>{{ competencia.id }}</td>
-            <td>{{ competencia.nombre }}</td>
+            <td>{{ competencia.descripcion }}</td>
             <td>{{ competencia.nivel }}</td>
             <td>
-              <button class="btn btn-detalles" routerLink="/listar-RAC">Detalles</button>
+              <button (click)="detallesCompetencia(competencia.id)" class="btn btn-detalles">Detalles</button>
             </td>
             <td>
               <button class="btn btn-editar" routerLink="/actualizar-competencia">Editar</button>
